@@ -26,4 +26,4 @@ Note that the project folder will be created **relative** to the repository fold
 
 ## Frameworks
 
-- [p5.js v1.9.0](<(https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js)>)
+- [p5.js v1.9.0](https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js)
