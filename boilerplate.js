@@ -38,6 +38,10 @@ try {
     if (err) console.error("Error creating project folder", err);
     else console.log("Project folder created successfully");
   });
+  fs.mkdir("assets", (err) => {
+    if (err) console.error("Error creating assets folder", err);
+    else console.log("Assets folder created successfully");
+  });
   fs.writeFile(`./${projectName}/${projectName}.js`, jsContent, (err) => {
     if (err) console.error("Error creating JavaScript file", err);
     else console.log("JavaScript file created successfully");
