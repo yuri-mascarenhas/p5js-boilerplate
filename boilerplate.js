@@ -31,3 +31,21 @@ function draw() {
     // Code in this function runs every frame.
 }
 `;
+
+// Actual boiler plate execution
+try {
+  fs.mkdir(projectName, (err) => {
+    if (err) console.error("Error creating project folder", err);
+    else console.log("Project folder created successfully");
+  });
+  fs.writeFile(`./${projectName}/${projectName}.js`, jsContent, (err) => {
+    if (err) console.error("Error creating JavaScript file", err);
+    else console.log("JavaScript file created successfully");
+  });
+  fs.writeFile(`./${projectName}/index.html`, jsContent, (err) => {
+    if (err) console.error("Error creating JavaScript file", err);
+    else console.log("JavaScript file created successfully");
+  });
+} catch (e) {
+  console.error("Creation Error:", e);
+}
