@@ -22,7 +22,7 @@ When you run the [boilerplate.js](boilerplate.js), it:
 3. Run it with node:\
    `node boilerplate.js <project-title>`
 
-Note that the project folder will be created **relative** to the repository folder. If you want to create in an **absolute** path you should pass the complete directory path.
+Note that the project folder will be created **inside** of the repository folder. If you want to create in an another path you should pass the absolute path of the directory through an argument like the in the [item 3](#how-to-use-it) example.
 
 ## Frameworks
 
