@@ -40,7 +40,7 @@ try {
     if (err) console.error("Error creating project folder", err);
     else console.log("Project folder created successfully");
   });
-  fs.mkdir("assets", (err) => {
+  fs.mkdir(`./${projectName}/assets`, (err) => {
     if (err) console.error("Error creating assets folder", err);
     else console.log("Assets folder created successfully");
   });
