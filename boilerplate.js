@@ -46,7 +46,7 @@ try {
     if (err) console.error("Error creating JavaScript file", err);
     else console.log("JavaScript file created successfully");
   });
-  fs.writeFile(`./${projectName}/index.html`, jsContent, (err) => {
+  fs.writeFile(`./${projectName}/index.html`, htmlContent, (err) => {
     if (err) console.error("Error creating JavaScript file", err);
     else console.log("JavaScript file created successfully");
   });
