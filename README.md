@@ -1,5 +1,5 @@
 # P5.JS Boilerplate
-
+![version](https://img.shields.io/badge/Version-V1.1-green)
 ## Description
 
 A minimal, simple-to-use boilerplate for quick creation of [p5.js](https://p5js.org/) projects.\
