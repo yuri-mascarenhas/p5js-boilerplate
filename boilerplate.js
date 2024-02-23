@@ -13,7 +13,7 @@ const htmlContent = `
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
-    <script src="${projectName}.js"></script>
+    <script src="sketch.js"></script>
 </head>
 <body>
     <main></main>
@@ -44,7 +44,7 @@ try {
     if (err) console.error("Error creating assets folder", err);
     else console.log("Assets folder created successfully");
   });
-  fs.writeFile(`./${projectName}/${projectName}.js`, jsContent, (err) => {
+  fs.writeFile(`./${projectName}/sketch.js`, jsContent, (err) => {
     if (err) console.error("Error creating JavaScript file", err);
     else console.log("JavaScript file created successfully");
   });
