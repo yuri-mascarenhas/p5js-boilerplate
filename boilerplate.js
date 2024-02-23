@@ -13,7 +13,7 @@ const htmlContent = `
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
-    <script src="${projectName}.js"></script>
+    <script src="sketch.js"></script>
 </head>
 <body>
     <main></main>
@@ -26,9 +26,11 @@ function preload() {
 }
 function setup() {
     // Code in this function runs once before draw().
+    createCanvas(500, 500);
 }
 function draw() {
     // Code in this function runs every frame.
+    background(200);
 }
 `;
 
@@ -38,17 +40,17 @@ try {
     if (err) console.error("Error creating project folder", err);
     else console.log("Project folder created successfully");
   });
-  fs.mkdir("assets", (err) => {
+  fs.mkdir(`./${projectName}/assets`, (err) => {
     if (err) console.error("Error creating assets folder", err);
     else console.log("Assets folder created successfully");
   });
-  fs.writeFile(`./${projectName}/${projectName}.js`, jsContent, (err) => {
+  fs.writeFile(`./${projectName}/sketch.js`, jsContent, (err) => {
     if (err) console.error("Error creating JavaScript file", err);
     else console.log("JavaScript file created successfully");
   });
-  fs.writeFile(`./${projectName}/index.html`, jsContent, (err) => {
-    if (err) console.error("Error creating JavaScript file", err);
-    else console.log("JavaScript file created successfully");
+  fs.writeFile(`./${projectName}/index.html`, htmlContent, (err) => {
+    if (err) console.error("Error creating HTML file", err);
+    else console.log("HTML file created successfully");
   });
 } catch (e) {
   console.error("Creation Error:", e);
